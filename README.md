@@ -102,6 +102,4 @@ UNAD – Abril 2025
 
 ---
 
-```
 
-¿Deseas que te ayude también a armar el repositorio completo o incluir capturas adicionales como imágenes de ejemplo en la carpeta?
