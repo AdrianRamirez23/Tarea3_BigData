@@ -1,6 +1,4 @@
-¡Por supuesto, Adrian! Aquí tienes todo el contenido completo del `README.md` listo para **copiar y pegar directamente** dentro de tu archivo `/codigo/README.md`:
 
----
 
 ```markdown
 # Tarea 3 – Procesamiento de Datos con Apache Spark
