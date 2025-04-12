@@ -11,12 +11,12 @@ Este repositorio contiene el desarrollo de la **Tarea 3** del curso **Procesamie
 
 ## 📁 Estructura del repositorio
 
-```
+
 /codigo/
   ├── tarea3.py                   # Script para procesamiento batch de datos históricos
   ├── spark_streaming_consumer.py # Script de consumo en tiempo real desde Kafka usando Spark Structured Streaming
   └── README.md                   # Documento actual
-```
+
 
 ---
 
@@ -67,35 +67,37 @@ Procesamiento de datos en tiempo real desde Kafka.
 
 ### 🔹 1. Procesamiento batch
 
-```bash
+
 spark-submit tarea3.py
-```
+
 
 ### 🔹 2. Streaming desde Kafka
 
 1. Iniciar servicios de Kafka:
-
+```
 ```bash
 # En terminal 1
 $KAFKA_HOME/bin/zookeeper-server-start.sh config/zookeeper.properties &
 
 # En terminal 2
 $KAFKA_HOME/bin/kafka-server-start.sh config/server.properties &
-```
+```markdown
 
 2. Ejecutar el productor simulado (opcional):
+```
 ```bash
 python3 kafka_producer.py
 ```
-
+```markdown
 3. Ejecutar el consumidor Spark Streaming:
+```
 
 ```bash
 spark-submit \
   --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.3 \
   spark_streaming_consumer.py
 ```
-
+```markdown
 4. Abrir la consola de monitoreo:  
 👉 http://localhost:4040 (o tu IP local)
 
@@ -128,4 +130,4 @@ Estudiante de Ingeniería de Sistemas – UNAD
 Abril 2025
 
 ---
-
+```
